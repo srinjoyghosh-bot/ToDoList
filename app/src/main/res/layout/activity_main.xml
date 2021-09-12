@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/dark_blue">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/overdue_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/tasks_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/overdue_rv"
+                ></androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/upcoming_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tasks_rv"
+                ></androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_task_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/aquamarine"
+        android:clickable="true"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_add"
+        app:tint="@null"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>
+<!--<LinearLayout-->
+<!--android:id="@+id/empty_view"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_centerInParent="true"-->
+<!--android:orientation="vertical"-->
+<!--android:visibility="gone"-->
+<!--    >-->
+<!--<ImageView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:src="@mipmap/ic_box_empty"-->
+<!--    android:layout_gravity="center"></ImageView>-->
+<!--<TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="No tasks added"-->
+<!--    android:textColor="@color/white"-->
+<!--    android:layout_gravity="center"-->
+<!--    android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+<!--    ></TextView>-->
+<!--</LinearLayout>-->
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    tools:context=".MainActivity"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:fillViewport="true"-->
+    <!--    android:background="@color/dark_blue">-->
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:orientation="vertical">-->
+
+    <!--            <androidx.recyclerview.widget.RecyclerView-->
+    <!--                android:id="@+id/overdue_rv"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>-->
+
+    <!--            <androidx.recyclerview.widget.RecyclerView-->
+    <!--                android:id="@+id/tasks_rv"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_below="@+id/overdue_rv"-->
+    <!--                ></androidx.recyclerview.widget.RecyclerView>-->
+
+    <!--            <androidx.recyclerview.widget.RecyclerView-->
+    <!--                android:id="@+id/upcoming_rv"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_below="@+id/tasks_rv"-->
+    <!--                ></androidx.recyclerview.widget.RecyclerView>-->
+    <!--        </LinearLayout>-->
+    <!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--            android:id="@+id/add_task_fab"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_alignParentBottom="true"-->
+    <!--            android:layout_alignParentEnd="true"-->
+    <!--            android:layout_margin="16dp"-->
+    <!--            android:backgroundTint="@color/aquamarine"-->
+    <!--            android:clickable="true"-->
+    <!--            app:elevation="6dp"-->
+    <!--            app:pressedTranslationZ="12dp"-->
+    <!--            app:srcCompat="@drawable/ic_add"-->
+    <!--            app:tint="@null"></com.google.android.material.floatingactionbutton.FloatingActionButton>-->
+    <!--    </RelativeLayout>-->
+
+    <!--</androidx.core.widget.NestedScrollView>-->
